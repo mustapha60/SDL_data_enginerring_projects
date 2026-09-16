@@ -1,0 +1,26 @@
+select sd.skills, count(jpf.*) as demand_count
+from job_postings_fact as jpf
+inner join skills_job_dim as sjd on jpf.job_id=sjd.job_id
+inner join skills_dim as sd on sjd.skill_id=sd.skill_id
+group by sd.skills
+having demand_count > 100
+order by demand_count desc
+limit 10;
+*/
+┌──────────┬──────────────┐
+│  skills  │ demand_count │
+│ varchar  │    int64     │
+├──────────┼──────────────┤
+│ python   │       759081 │
+│ sql      │       758824 │
+│ aws      │       302245 │
+│ azure    │       280137 │
+│ excel    │       245645 │
+│ tableau  │       241876 │
+│ r        │       237602 │
+│ spark    │       222464 │
+│ power bi │       205785 │
+│ java     │       164723 │
+└──────────┴──────────────┘
+  10 rows       2 columns
+*/

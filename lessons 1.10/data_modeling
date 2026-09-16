@@ -1,0 +1,8 @@
+select * from job_id;
+use data_jobs;
+select * from skills_dim limit 5;
+select * from information_schema.tables
+where table_catalog= 'data_jobs';
+select* from job_postings_fact;
+select* from information_schema.tables;
+discribe job_postings_fact;
