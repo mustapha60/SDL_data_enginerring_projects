@@ -5,7 +5,7 @@ inner join skills_dim as sd on sjd.skill_id=sd.skill_id
 group by sd.skills
 having demand_count > 100
 order by demand_count desc
-limit 150;
+limit 200;
 */
 ┌──────────┬──────────────┐
 │  skills  │ demand_count │
