@@ -9,7 +9,7 @@ JOIN skills_dim sd
 WHERE jf.salary_year_avg IS NOT NULL
 GROUP BY sd.skills
 ORDER BY avg_salary DESC
-LIMIT 100;
+LIMIT 10;
 
 
 ┌──────────────┬────────────┐
