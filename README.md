@@ -1,8 +1,3 @@
-Here’s a **clean, brief, professional README** you can paste directly into your GitHub repository for your SQL Data Engineering project.  
-I’m keeping it concise but still strong enough to look polished on GitHub.
-
----
-
 ## 📊 SQL Data Engineering Project
 
 A beginner‑friendly **data engineering pipeline** built using SQL to demonstrate core skills in data ingestion, cleaning, transformation, and analytics. This project is designed as part of my learning journey toward becoming a **Data Engineer**.
